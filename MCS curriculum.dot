@@ -55,7 +55,7 @@ digraph vert {
             n11;
             n12;
             n13;
-            n106;
+#            n106;
 	    }
 
 	    subgraph cluster_2 {
@@ -74,7 +74,7 @@ digraph vert {
 		n31;
 		n32;
 		n33;
-		n102;
+#		n102;
 	}
 	
 	subgraph cluster_4 {

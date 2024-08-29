@@ -1,0 +1,195 @@
+digraph vert {
+    graph [ rankdir = "LR"]
+	fontname="Helvetica,Arial,sans-serif"
+	node [fontname="Helvetica,Arial,sans-serif"]
+	edge [fontname="Helvetica,Arial,sans-serif"]
+	node [shape=ellipse fillcolor="white:gray" fontcolor="black"]
+	
+		node [style=radial]
+		n11 [gradientangle=360 label="CS441:Applied Machine Learning" URL="https://ws.engr.illinois.edu/sitemanager/getfile.asp?id=2218"]; 
+		n12 [gradientangle=360 label="CS445:Computational Photography" URL="https://ws.engr.illinois.edu/sitemanager/getfile.asp?id=572"];
+		n13 [gradientangle=360 label="CS447:Natural Language Processing"];
+
+		n21 [gradientangle=360 label="CS410:Text Information Systems" URL="https://ws.engr.illinois.edu/sitemanager/getfile.asp?id=515"];
+		n22 [gradientangle=360 label="CS411:Database Systems" URL="https://ws.engr.illinois.edu/sitemanager/getfile.asp?id=513"];
+		n23 [gradientangle=360 label="CS412:Introduction to Data Mining" URL="https://ws.engr.illinois.edu/sitemanager/getfile.asp?id=511"];
+
+
+		n31 [gradientangle=360 label="CS418:Interactive Computer Graphics"];
+		n32 [gradientangle=360 label="CS445:Computational Photography" URL="https://ws.engr.illinois.edu/sitemanager/getfile.asp?id=572"];
+		n33 [gradientangle=360 label="CS416:Data Visualization" URL="https://ws.engr.illinois.edu/sitemanager/getfile.asp?id=507"];
+
+		n41 [gradientangle=360 label="CS484:Parallel Programming" URL="https://ws.engr.illinois.edu/sitemanager/getfile.asp?id=500"];
+
+		n51 [gradientangle=360 label="CS421:Programming Languages and Compilers"];
+		n52 [gradientangle=360 label="CS427:Software Engineering I" URL="https://ws.engr.illinois.edu/sitemanager/getfile.asp?id=512"];
+		n53 [gradientangle=360 label="CS475:Formal Models Computation"];
+
+		n61 [gradientangle=360 label="CS450:Numerical Analysis" URL="https://ws.engr.illinois.edu/sitemanager/getfile.asp?id=573"];
+		n62 [gradientangle=360 label="CS463:Computer Security II" URL="https://ws.engr.illinois.edu/sitemanager/getfile.asp?id=5461"];
+		
+		n71 [gradientangle=360 label="CS425:Distributed Systems (Cloud Computing Concepts)" URL="https://ws.engr.illinois.edu/sitemanager/getfile.asp?id=514"];
+		n72 [gradientangle=360 label="CS435:Cloud Networking" URL="https://ws.engr.illinois.edu/sitemanager/getfile.asp?id=509"];
+		n73 [gradientangle=360 label="CS437:Internet of Things" URL="https://ws.engr.illinois.edu/sitemanager/getfile.asp?id=2240"];
+		n74 [gradientangle=360 label="CS498:Cloud Computing Applications" URL="https://ws.engr.illinois.edu/sitemanager/getfile.asp?id=510"];		
+		
+	
+	
+		n101 [gradientangle=360 label="CS513:Theory and Practice of Data Cleaning" URL="https://ws.engr.illinois.edu/sitemanager/getfile.asp?id=506"];		
+		n102 [gradientangle=360 label="CS519:Scientific Visualization" URL="https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:78ef0a5f-6307-4635-8552-379d5cc15313#pageNum=1"];		
+		n103 [gradientangle=360 label="CS598:Foundations of Data Curation" URL="https://ws.engr.illinois.edu/sitemanager/getfile.asp?id=505"];		
+		n104 [gradientangle=360 label="CS598:Practical Statistical Learning" URL="https://ws.engr.illinois.edu/sitemanager/getfile.asp?id=502"];		
+		n105 [gradientangle=360 label="CS598:Advanced Bayesian Modeling" URL="https://ws.engr.illinois.edu/sitemanager/getfile.asp?id=504"];
+		n106 [gradientangle=360 label="CS598:Deep Learning for Healthcare" URL="https://ws.engr.illinois.edu/sitemanager/getfile.asp?id=2191"];		
+		n107 [gradientangle=360 label="CS598:Cloud Computing Capstone" URL="https://ws.engr.illinois.edu/sitemanager/getfile.asp?id=508"];
+		n108 [gradientangle=360 label="CS598:Data Mining Capstone" URL="https://ws.engr.illinois.edu/sitemanager/getfile.asp?id=503"];
+		
+		n201 [gradientangle=360 label="STAT420:Methods of Applied Statistics" URL="https://ws.engr.illinois.edu/sitemanager/getfile.asp?id=501"];		
+	
+	
+
+	
+	    subgraph cluster_1 {
+		    label = "Artificial Intelligence";
+		
+            n11;
+            n12;
+            n13;
+            n106;
+	    }
+
+	    subgraph cluster_2 {
+		    label = "Database and Information Systems";
+		
+    		n21;
+	    	n22;
+		    n23;
+	    }
+	    
+	subgraph cluster_3 {
+		label = "Graphics/HCI";
+		
+
+		
+		n31;
+		n32;
+		n33;
+		n102;
+	}
+	
+	subgraph cluster_4 {
+		label = "Parallel Computing";
+		
+
+		
+		n41;
+	}
+
+	subgraph cluster_5 {
+		label = "Programming Languages & Software Engineering";
+		
+
+		
+        n51;
+        n52;
+        n53;
+	}
+
+	subgraph cluster_6 {
+		label = "Scientific Computing";
+
+
+        n61;
+
+	}
+
+	subgraph cluster_7 {
+		label = "Security and Privacy";
+
+        n62;
+	}
+
+	subgraph cluster_8 {
+		label = "Systems and Networking";
+
+        n71;
+        n72;
+        n73;
+        n74;
+	}
+	
+	subgraph cluster_9 {
+		label = "Theory and Algorithms";
+
+        n53;
+	}
+
+	
+	subgraph cluster_10 {
+		label = "Advanced Coursework";
+
+        n101;
+        n102;
+        n103;
+        n104;
+        n105;
+        n106;
+        n107;
+        n108;
+	}
+
+
+	subgraph cluster_15 {
+		label = "Statistics";
+
+        n201
+	}
+
+
+    n201 -> {n11 n104};
+    {n31 n33} -> n102;
+    
+    
+    n11 -> n106;
+#    n31 -> n102;
+#    n33 -> n102;
+    
+    {n11 n12 n106 n21 n23 } -> n104;
+
+    
+#    n11 -> n104;
+#    n12 -> n104;
+#    n106 -> n104;
+#    n21 -> n104;
+#    n23 -> n104;
+ 
+    {n71 n72 n73} -> n107;
+    
+#    n71 -> n107;
+#    n72 -> n107;
+#    n73 -> n107;
+    
+#    n23 -> n108;
+#    n21 -> n108;
+    
+    {n23 n21} -> n108;
+    
+bottom [
+    label = "Degree Requirement for MCS of UIUC"
+    URL="https://siebelschool.illinois.edu/academics/graduate/professional-mcs/online-master-computer-science"
+    shape = plaintext
+    fillcolor="white"
+    fontcolor=blue
+    ]
+    
+n201->bottom[style=invis]
+
+annotation1 [
+    label = "4 courses each from a different area\n3 courses each from advanced coursework\n1 course from any"
+    shape = plaintext
+    fillcolor="white"
+    fontcolor=black
+    ]
+bottom->annotation1[style=invis]    
+
+}
